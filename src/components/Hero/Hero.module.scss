@@ -2,8 +2,9 @@
 
 .wrapper {
     overflow: hidden;
-
-
+    background-repeat: repeat;
+    background-image: url("../../../public/hero-bg.png");
+    background-size: 30rem;
     .container {
         position: relative;
         z-index: 1;
@@ -14,6 +15,7 @@
                 text-align: center;
                 gap: 2rem;
             }
+
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -22,19 +24,24 @@
 
 
         .lowerElements {
-            @media (max-width: $sm), (max-width: $md) {
+
+            @media (max-width: $sm),
+            (max-width: $md) {
                 margin-top: 4rem;
                 gap: 2rem;
                 justify-content: center;
             }
+
             margin-top: 12rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+
             .experience {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
+
                 >:nth-child(2) {
                     line-height: 25px;
                 }
@@ -54,15 +61,20 @@
         }
 
         .person {
-            @media (max-width: $sm ), (max-width: $md) {
+
+            @media (max-width: $sm ),
+            (max-width: $md) {
                 position: relative;
                 left: 0;
-                background-size: 20rem;
+                background-size: 25rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 background-position: bottom;
+                margin-top: -2rem;
+                margin-bottom: 6rem;
             }
+
             position: absolute;
             bottom: -4rem;
             margin: auto;
@@ -70,12 +82,14 @@
             background-repeat: no-repeat;
             background-size: 23rem;
             left: 33%;
+            background-position: center;
 
             img {
                 @media (max-width: $sm ) {
                     width: 19rem;
                     margin-bottom: -15px;
                 }
+
                 margin-bottom: -5px;
                 margin-left: 45px;
             }
@@ -86,6 +100,7 @@
                 position: relative;
                 display: none;
             }
+
             position: absolute;
             top: 50%;
             left: 0;

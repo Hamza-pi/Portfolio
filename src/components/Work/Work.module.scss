@@ -20,9 +20,18 @@
                 >div {
                     flex: 1;
                 }
-
+                .post{
+                    >:nth-child(1)
+                    {
+                        font-weight: 500;
+                    }
+                }
                 .role {
                     margin-left: 2rem;
+                    >:nth-child(1)
+                    {
+                        font-weight: 500;
+                    }
                 }
             }
 
@@ -38,7 +47,7 @@
                     position: absolute;
                     height: 92%;
                     width: 2px;
-                    background-image: linear-gradient(black 33%, rgba(255, 255, 255, 0) 0%);
+                    background-image: linear-gradient(rgba(255, 255, 255, 0.702) 33%, rgba(255, 255, 255, 0) 0%);
                     background-position: right;
                     background-size: 2px 30px;
                     background-repeat: repeat-y;
