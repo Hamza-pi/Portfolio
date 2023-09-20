@@ -1,6 +1,23 @@
 @import './contants.scss';
-.container{
+
+.container {
     overflow-x: clip;
     position: relative;
     color: $primary;
+
+    .heroBlur1{
+        position: absolute;
+        top: -5rem;        
+        left: -5rem;
+    }
+    .heroBlur2{
+        position: absolute;
+        top: -5rem;
+        right: 15rem;
+    }
+
+    .expBlur1{
+        position: absolute;
+        right: 15rem;
+    }
 }
