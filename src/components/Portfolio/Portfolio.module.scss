@@ -1,0 +1,42 @@
+@import '../../../app/styles/contants.scss';
+
+.wrapper{
+    background: $background;
+    overflow: hidden;
+    .container{
+        flex-direction: column;
+        gap: 2rem;
+        .heading{
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap; 
+            >:nth-child(2)
+            {
+                text-decoration: underline;
+               
+                cursor: pointer;
+            }
+        }    
+        
+        .showCase{
+            width: 100%;
+            gap: 2rem;
+            justify-content:center;
+            flex-wrap: wrap;
+            a{
+                >img{
+
+                    @media (max-width: $sm) {
+                        width: 100%;
+                    }
+                    border-radius: 20px;
+                    max-width: 35rem;
+                    max-height: 28rem;
+                    box-shadow: 0px 21px 13px rgba(0, 0, 0, 13%);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
