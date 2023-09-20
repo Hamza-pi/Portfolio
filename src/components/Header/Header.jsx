@@ -5,13 +5,9 @@ import { BiPhoneCall, BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
 import dynamic from "next/dynamic";
-import useHeaderShadow from "../../hooks/useHeaderShadow";
+import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 
-const useOutsideAlerter = dynamic(()=>{
-  return import("../../hooks/useOutsideAlerter") 
-},{
-  ssr:false
-})
+import useHeaderShadow from "../../hooks/useHeaderShadow";
 
 const Header = () => {
   const menuRef = useRef(null);
