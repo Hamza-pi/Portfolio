@@ -15,7 +15,8 @@ const Portfolio = () => {
     <Header/>
     <motion.section
     variants={staggerChildren}
-    initial="show"
+    initial="hidden"
+    whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
     className={`paddings ${css.wrapper}`}>
 
@@ -26,10 +27,9 @@ const Portfolio = () => {
 
         <motion.div variants={textVariant(.4)} className={`flexCenter ${css.heading}`}>
           <div>
-            <span className="primaryText orange">My Latest Works</span>
+            <span className="primaryText orange">My Work</span>
             <p style={{marginTop: "10px",color:"white"}}>Perfect solution for digital experience</p>
           </div>
-        <Link className="secondaryText orange" href="/">Home</Link>
         </motion.div>
 
 
