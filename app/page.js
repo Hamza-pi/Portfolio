@@ -21,14 +21,35 @@ export default function Home() {
 
       <div style={{ position: "relative" }}>
         <div className={css.expBlur1}>
-          <Blur background="rgba(85, 185, 64, 0.55)"/>
+          <Blur
+            background="rgba(85, 185, 64, 0.85)"
+            width="40rem"
+            height="25rem"
+            blur="200px"
+          />
+        </div>
+        <div className={css.expBlur2}>
+          <Blur height="25rem" blur="120px" />
         </div>
         <Experties />
       </div>
       <Work />
-      <Portfolio />
+      <div style={{ position: "relative" }}>
+        <div className={css.portBlur2}>
+          <Blur background="rgba(85, 185, 64, 0.55)" blur="110px"/>
+        </div>
+        <div className={css.portBlur1}>
+          <Blur  height="25rem" blur="120px"/>
+        </div>
+        <Portfolio />
+      </div>
       <People />
-      <Footer />
+      <div style={{ position: "relative" }}>
+        <div className={css.portBlur2}>
+          <Blur background="rgba(85, 185, 64, 0.25)" height="25rem"/>
+        </div>
+        <Footer />
+      </div>
     </div>
   );
 }

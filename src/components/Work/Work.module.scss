@@ -1,6 +1,10 @@
 @import '../../../app/styles/contants.scss';
 
 .wrapper {
+    overflow: hidden;
+    background-repeat: repeat;
+    background-image: url("../../../public/hero-bg.png");
+    background-size: 30rem;
     .container {
         flex-direction: column;
         gap: 2rem;

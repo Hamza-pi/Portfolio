@@ -2,6 +2,11 @@
 
 .wrapper{
     background: $background;
+    overflow: hidden;
+    background-repeat: repeat;
+    background-image: url("../../../public/hero-bg.png");
+    background-size: 30rem;
+    color:rgba(231, 231, 231, 1);
     .container{
         gap: 2rem;
         @media (max-width: $sm) {

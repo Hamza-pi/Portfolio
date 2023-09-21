@@ -3,6 +3,7 @@ import React from "react";
 import { footerVariants, staggerChildren } from "../../utils/motion";
 import css from "./Footer.module.scss";
 import {motion} from 'framer-motion'
+import Link from "next/link";
 const Footer = () => {
   return (
     <motion.section
@@ -32,10 +33,10 @@ const Footer = () => {
             <p>145 New York, FL 5467, USA</p>
           </div>
           <ul className={css.menu}>
-          <li><a href="#experties">Services</a></li>
-          <li><a href="#work">Experience</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#people">Testimonials</a></li>
+          <li><Link href="/#experties">Services</Link></li>
+          <li><Link href="/#work">Experience</Link></li>
+          <li><Link href="#portfolio">Portfolio</Link></li>
+          <li><Link href="/#people">Testimonials</Link></li>
           </ul>
         </div>
       </motion.div>
