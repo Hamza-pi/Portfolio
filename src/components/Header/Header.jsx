@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import css from "./Header.module.scss";
 import { BiPhoneCall, BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
@@ -10,6 +10,7 @@ import Link from "next/link";
 const Header = () => {
   const menuRef = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
+  const [bg,setBg] = useState("transparent")
   const headerShadow = useHeaderShadow();
 
   //to handle click outside of sidebar on mobile
@@ -18,6 +19,22 @@ const Header = () => {
     setMenuOpened,
   });
 
+  useEffect(()=>{
+    window.addEventListener('scroll',()=>{
+      if(window.scrollY>0){
+        setBg("#182523")
+      }
+      else{
+        setBg("transparent")
+      }
+    })
+    return ()=>{
+      window.removeEventListener("scroll",()=>{
+        
+      })
+    }
+  },[])
+
   return (
     <motion.div
       variants={headerVariants}
@@ -25,7 +42,7 @@ const Header = () => {
       whileInView="show"
       className={`paddings ${css.wrapper}`}
       viewport={{ once: true, amount: 0.25 }}
-      style={{boxShadow: headerShadow}}
+      style={{boxShadow: headerShadow,background:bg}}
     >
       <div className={`innerWidth ${css.container} flexCenter`}>
         <img className={css.name} src="./logo.png" alt="Logo Img"/>
