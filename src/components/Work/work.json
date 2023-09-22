@@ -1,23 +1,23 @@
 [
     {
-      "place": "Self-Employed, Brisbane",
-      "tenure": "Aug 2014 - Sep 2016",
-      "role": "AR applications in Unity",
+      "place": "Volvo Trucks, Bacau",
+      "tenure": "2016 - 2020",
+      "role": "Electrical Engineering Techician",
       "detail":
-        "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts"
+        "An Electrical engineering technicians install and maintain electrical control systems and equipment and adjust electrical prototypes"
     },
     {
-      "place": "New Man Services",
-      "tenure": "Aug 2014 - Sep 2016",
-      "role": "Velox Design and MIT",
+      "place": "Velox Design, London",
+      "tenure": "Sep 2021 - Present",
+      "role": "AR/Unity consultant and developer",
       "detail":
-        "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts"
+        "An AR/Unity consultant and developer is a professional who specializes in creating Augmented Reality experiences using the Unity game engine."
     },
     {
-      "place": "Global Solution",
-      "tenure": "Aug 2014 - Sep 2016",
-      "role": "Ambassador of Xreal Comm",
+      "place": "Massachusetts Institute of Technology",
+      "tenure": "Sep 2022 - Present",
+      "role": "AR Researcher and Developer",
       "detail":
-        "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts"
+        "I'm doing research and development for a new project that includes AR glasses in Wagner's 'Parsifal' for the Bayreuth Festival summer 2023"
     }
 ]

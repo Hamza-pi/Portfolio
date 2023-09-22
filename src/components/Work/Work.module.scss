@@ -62,7 +62,7 @@
 
                 >div {
                     flex: 1;
-                    padding-top: .8rem;
+                    padding-top: .5rem;
                     z-index: 2;
 
                     .circle {
@@ -70,7 +70,9 @@
                         background: black;
                         width: 1.2rem;
                         height: 1.2rem;
+                       
                     }
+                    
                 }
             }
         }

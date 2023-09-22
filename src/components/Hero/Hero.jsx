@@ -32,8 +32,11 @@ const Hero = () => {
           <motion.img variants={slideIn("up", "tween", 0.5, 1.3)} src="./person2.png" alt="" />
         </motion.div>
 
-        <a className={css.email} href={`mailto:${content.email}`}>
-          {content.email}
+       <a  className={css.email} href={`mailto:${content.email1}`}>
+          {content.email1}
+        </a> 
+        <a  className={css.email2} href={`mailto:${content.email2}`}>
+          {content.email2}
         </a>
 
         <div className={css.lowerElements}>
@@ -41,7 +44,7 @@ const Hero = () => {
             <div className="primaryText">{content.followers}</div>
             <div className="secondaryText">
               <div>More than</div>
-              <div>FOLLOWERS</div>
+              <div>DISCORD MEMBERS</div>
             </div>
           </motion.div>
 

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { projectExperience, WhatDoIHelp,projectCompleted,happyClients } from "./experties.js";
+import { projectExperience, WhatDoIHelp,projectCompleted,happyClients } from "./expertiesContent.js";
 import css from "./Experties.module.scss";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "../../utils/motion.js";

@@ -106,5 +106,16 @@
             left: 0;
             color: white;
         }
+        .email2 {
+            @media (max-width: $sm ) {
+                position: relative;
+                display: none;
+            }
+
+            position: absolute;
+            top: 60%;
+            left: 0;
+            color: white;
+        }
     }
 }
