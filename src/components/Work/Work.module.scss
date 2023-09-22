@@ -46,6 +46,9 @@
                 flex-direction: column;
                 gap: 1.4rem;
                 left: 45%;
+                @media (max-width: $sm){
+                left: 40%;
+            }
 
                 .line {
                     position: absolute;
