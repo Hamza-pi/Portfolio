@@ -1,6 +1,7 @@
 'use client'
 import React from "react";
-import { comments, sliderSettings } from "../../utils/data";
+import { sliderSettings } from "../../utils/data";
+import content from "./people.json"
 import css from "./People.module.scss";
 import Slider from "react-slick";
 import {motion} from 'framer-motion'
@@ -24,11 +25,11 @@ const People = () => {
 
 
         <div className={`flexCenter ${css.heading}`}>
-          <span className="primaryText orange">People talk about us</span>
+          <span className="primaryText orange">{content.heading}</span>
           <p style={{ marginTop: "2rem" }}>
-            I got a job that was in accordance with the salary and field of work
+            {content.para1}
           </p>
-          <p>The process of submitting an appilication was quite cosy</p>
+          <p>{content.para2}</p>
         </div>
 
 
@@ -36,7 +37,7 @@ const People = () => {
         <div className={`yPaddings ${css.comments}`}>
           {/* to use slider , we have to inlcude css in index.html head */}
           <Slider {...sliderSettings} className={css.slider}>
-            {comments.map((comment, i) => {
+            {content.comments.map((comment, i) => {
               return (
                 <div key={i} className={`flexCenter ${css.comment}`}>
                   <img src={comment.img} alt="comment" />

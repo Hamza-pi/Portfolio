@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import css from "./Portfolio.module.scss";
 import { fadeIn, staggerChildren, textVariant } from "../../utils/motion";
-import portfolio from "../../utils/portfolio.json"
+import portfolio from "./portfolio.json"
 import Link from "next/link";
 const Portfolio = () => {
 

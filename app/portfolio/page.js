@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import css from "./page.module.scss";
 import appCss from "../styles/App.module.scss"
 import { fadeIn, staggerChildren, textVariant } from "../../src/utils/motion";
-import portfolio from "../../src/utils/portfolio.json"
+import portfolio from "../../src/components/Portfolio/portfolio.json"
 import Link from "next/link";
 import Header from "@/src/components/Header/Header";
 import Footer from "@/src/components/Footer/Footer";

@@ -7,6 +7,7 @@ import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
 import Link from "next/link";
+import content from "./header.json"
 const Header = () => {
   const menuRef = useRef(null);
   const [menuOpened, setMenuOpened] = useState(false);
@@ -56,7 +57,7 @@ const Header = () => {
           <li><Link href="#portfolio">Portfolio</Link></li>
           <li><Link href="/#people">Testimonials</Link></li>
           <li className={`flexCenter ${css.phone}`}>
-            <p>+001 (313) 345 678</p>
+            <p>{content.phone}</p>
             <BiPhoneCall size={"40px"} style={{color:"#286F6C"}}/>
         </li>
         </ul>

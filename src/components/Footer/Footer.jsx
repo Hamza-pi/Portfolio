@@ -4,6 +4,7 @@ import { footerVariants, staggerChildren } from "../../utils/motion";
 import css from "./Footer.module.scss";
 import {motion} from 'framer-motion'
 import Link from "next/link";
+import content from "./footer.json"
 const Footer = () => {
   return (
     <motion.section
@@ -19,18 +20,18 @@ const Footer = () => {
       className={`innerWidth yPaddings flexCenter ${css.container}`}>
         <div className={css.left}>
           <span className="primaryText">
-            {`Let's make something`} <br />
-            amazing together.
+            {content.heading1} <br />
+            {content.heading2}
           </span>
           <span className="primaryText">
-            Start by <a href="mailto:zainkeepscode@gmail.com" className="orange">saying hi</a>
+            Start by <a href={`mailto:${content.sayingHiMail}`} className="orange">saying hi</a>
           </span>
         </div>
 
         <div className={css.right}>
           <div className={css.info}>
             <span className="secondaryText">Information</span>
-            <p>145 New York, FL 5467, USA</p>
+            <p>{content.address}</p>
           </div>
           <ul className={css.menu}>
           <li><Link href="/#experties">Services</Link></li>

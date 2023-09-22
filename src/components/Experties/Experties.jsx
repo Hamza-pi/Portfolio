@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { projectExperience, WhatDoIHelp } from "../../utils/data";
+import { projectExperience, WhatDoIHelp,projectCompleted,happyClients } from "./experties.js";
 import css from "./Experties.module.scss";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer, textVariant } from "../../utils/motion.js";
@@ -50,11 +50,11 @@ const Experties = () => {
 
           <div className={`flexCenter ${css.stats}`}>
             <div className={`flexCenter ${css.stat}`}>
-              <span className="primaryText">285+</span>
+              <span className="primaryText">{projectCompleted}</span>
               <span className="secondaryText">Project Completed</span>
             </div>
             <div className={`flexCenter ${css.stat}`}>
-              <span className="primaryText">190+</span>
+              <span className="primaryText">{happyClients}</span>
               <span className="secondaryText">Happy Clients</span>
             </div>
           </div>

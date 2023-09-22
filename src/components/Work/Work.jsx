@@ -1,6 +1,6 @@
 'use client'
 import React from "react";
-import { workExp } from "../../utils/data";
+import content from "./work.json";
 import css from "./Work.module.scss";
 import {motion} from 'framer-motion'
 import { fadeIn, staggerChildren, textVariant2, zoomIn } from "../../utils/motion";
@@ -19,7 +19,7 @@ const Work = () => {
         <span className="primaryText yPaddings orange">My Work Experience</span>
 
         <div className={`flexCenter ${css.experiences}`}>
-          {workExp.map((exp, i) => {
+          {content.map((exp, i) => {
             return (
               <motion.div variants={textVariant2} key={i} className={`flexCenter ${css.exp}`}>
                 <div className={css.post}>
