@@ -44,6 +44,7 @@
                 padding: 3rem;
                 justify-content: flex-start;
                 box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.767);
+                right: -100%;
             }
 
             text-transform: uppercase;
@@ -88,6 +89,12 @@
             }
 
             display: none;
+
+            .closeIcon{
+                background: $background;
+                padding: 10px;
+                border-radius: 5px;
+            }
         }
     }
 }
