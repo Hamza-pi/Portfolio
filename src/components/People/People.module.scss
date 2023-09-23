@@ -1,20 +1,23 @@
 @import "../../../app/styles/contants.scss";
 
 .wrapper {
-  background: $background;
+  z-index: 1;
   overflow: hidden;
-    background-repeat: repeat;
-    background-image: url("../../../public/hero-bg.png");
-    background-size: 30rem;
+  background-repeat: repeat;
+  background-image: url("../../../public/hero-bg.png");
+  background-size: 30rem;
+
   .container {
     .heading {
       flex-direction: column;
+
       p {
         line-height: 30px;
       }
     }
 
     .comments {
+
       // fix for spacing between slides
       .slider :global {
         .slick-list {
@@ -22,10 +25,12 @@
           box-sizing: initial;
           padding: 80px 0px;
           overflow-y: visible;
-          & .slick-slide > div {
+
+          & .slick-slide>div {
             padding: 0 20px;
           }
-          & .slick-slide.slick-active.slick-current + .slick-slide {
+
+          & .slick-slide.slick-active.slick-current+.slick-slide {
             @media (min-width: $lg) {
               transition: all 1000ms ease;
               scale: 1.1;
@@ -43,17 +48,16 @@
         gap: 1rem;
         border: 1px solid $secondary-white;
         background: rgba(226, 226, 226, 0.15);
-        background: radial-gradient(
-          ellipse 100% 300px at top left,
-          rgba(231, 231, 231, 0.393) 0%,
-          transparent 45%,
-        ),radial-gradient(
-          ellipse 100% 300px at top right,
-          rgba(231, 231, 231, 0.393) 0%,
-          transparent 45%,
-        );
+        background: radial-gradient(ellipse 100% 300px at top left,
+            rgba(231, 231, 231, 0.393) 0%,
+            transparent 45%,
+          ), radial-gradient(ellipse 100% 300px at top right,
+            rgba(231, 231, 231, 0.393) 0%,
+            transparent 45%,
+          );
         border-radius: 20px;
         position: relative;
+
         img {
           margin: auto;
           border-radius: 100%;
@@ -63,23 +67,28 @@
           top: -2rem;
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));
         }
+
         p {
           text-align: center;
           font-size: 0.9rem;
           line-height: 25px;
         }
+
         .line {
           width: 100%;
         }
+
         .bio {
-          > * {
+          >* {
             display: block;
             text-align: center;
           }
+
           > :nth-child(1) {
             font-weight: 600;
             margin-bottom: 5px;
           }
+
           > :nth-child(2) {
             font-size: 0.7rem;
             color: rgb(172, 172, 172);
